@@ -114,6 +114,8 @@ body {
     justify-content: space-evenly;
     width: 200xp;
     height: 80%;
+    padding-bottom: 600px;
+    padding-top: 200px;
     background-color: white;
     border: 1px solid;
     border-radius: 50px;
@@ -157,12 +159,19 @@ body {
 .str {width:100%;background-color:rgb(122, 202, 255);}
 .stre {width:70%;background-color:rgb(122, 202, 255);}
 
-@media screen and (max-width: 700px) {
-    .nav-list, .main-container{
+@media screen and (max-width: 800px) {
+    .nav-list, .main-container, .skill-container, h3{
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
         min-width: 300px;
+        align-content: center;
     }
 }
+
+    
+
+
+
 
 
