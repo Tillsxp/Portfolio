@@ -96,6 +96,10 @@ body {
     text-align: center;
 }
 
+.main-item3{
+    text-align: center;
+}
+
 .row:after {
     content: "";
     display:table;
@@ -108,20 +112,10 @@ body {
 
 .skill-container
 {
-
     display: flex;
     flex-direction: row;
     justify-content: center;
     justify-content: space-evenly;
-    width: 200xp;
-    height: 80%;
-    padding-bottom: 800px;
-    padding-top: 200px;
-    background-color: white;
-    border: 1px solid;
-    border-radius: 50px;
-    align-items: center;
-    
 }
 
 .skillbar{
