@@ -32,25 +32,6 @@ body {
     font-family: sans-serif;
     color: white;
     display:flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-}
-
-
-
-.typewriter p {
-    overflow: hidden; 
-    border-right: .15em solid white; 
-    color: white;
-    white-space: nowrap; 
-    margin: 0 auto; 
-    
-    letter-spacing: .15em; 
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .5s step-end infinite;
-  }
 
 @keyframes typing {
     from {width: 0;}
