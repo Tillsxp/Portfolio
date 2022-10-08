@@ -1,173 +1,67 @@
-* {
-    box-sizing: border-box;
-}
-
-.header {
+body {
+    margin: 0;
     background-image: url("Bilder/moutain.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position:center;
-    height: 200px;
-    padding: 50px;
-    font-family: sans-serif;
-    color: white;
-    text-align: center;
-}
-
-body {
-    margin: 0;
-    background-color: rgb(222, 242, 255);
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-}
-/* nav */
-body {
-    margin: 0;
-}
-.nav-list {
-    background-color: white;
-    box-shadow: 0px 0px 5px;
-    padding: 1rem 0;
-    margin: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
+    background-size: auto;
 }
 
-
-.nav-op{
-    list-style-type:none;
-    margin-right: 2rem;
-}
-
-.nav-op a{
-    text-decoration: none;
-    color:black;
-    font-size: large;
-    font-family:monospace;
-}
-
-.nav-op a:hover{
-    color:rgb(122,202,255)
-}
-
-.active{
-    text-decoration: underline;
-    
-}
-
-
-.nav-op:first-child{
-    margin-right:auto;
-    margin-left: 2rem;
-}
-
-.btn-primary{
-    font-family: monospace;
-    font-size: 1rem;
-    background-color:rgb(122, 202, 255);
-    border:none;
-    border-radius:5px;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-.btn-primary:hover{
-    background-color:rgb(83, 186, 255) ;
-}
-
-.disabled {
-    opacity:0.6;
-    cursor:not-allowed;
-}
-
-/* nav */
-
-.main-container {
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-evenly;
-
-}
-.main-item1{
-    text-align: center;
-}
-
-.row:after {
-    content: "";
-    display:table;
-    clear:both;
-}
-
-#header{
-    font-size: 300%;
-}
-
-.skill-container
-{
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-evenly;
-    width: 200xp;
-    height: 80%;
-    padding-bottom: 800px;
-    padding-top: 200px;
-    background-color: white;
-    border: 1px solid;
-    border-radius: 50px;
-    align-items: center;
-    
-}
-
-.skillbar{
-    background-color: #ddd;
-    width: 200px;
-}
-
-.skills {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color:white;
-    display: flex;
-    height: 40px;
-}
-
-.contact-container {
+.sidenav ul{
+    list-style-type: none;
+    width: 10%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 100%;
+    background-color: rgba(192, 192, 192, 0.747);
+    margin: 0;
+    font-family: monospace;
+    font-size: x-large;
+}
+
+.sidenav li {
+    margin-top: 20px;
+}
+
+.sidenav li:nth-child(-n+2){
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+}
+
+.main {
+    font-family: sans-serif;
+    color: white;
+    display:flex;
     align-items: center;
+    flex-direction: column;
+    position: relative;
 }
 
 
 
+.typewriter p {
+    overflow: hidden; 
+    border-right: .15em solid white; 
+    color: white;
+    white-space: nowrap; 
+    margin: 0 auto; 
+    
+    letter-spacing: .15em; 
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .5s step-end infinite;
+  }
 
-.html {width:90%;background-color:rgb(122, 202, 255);}
-.css{width:90%;background-color:rgb(122, 202, 255);}
-.js {width:20%;background-color:rgb(122, 202, 255);}
-.csharp {width:90%;background-color:rgb(122, 202, 255);}
-.cplus {width:50%;background-color:rgb(122, 202, 255);}
-.kom {width:95%;background-color:rgb(122, 202, 255);}
-.ans {width:80%;background-color:rgb(122, 202, 255);}
-.str {width:100%;background-color:rgb(122, 202, 255);}
-.stre {width:70%;background-color:rgb(122, 202, 255);}
-.python {width:20%;background-color:rgb(122, 202, 255);}
-
-@media screen and (max-width: 800px) {
-    .nav-list, .main-container, .skill-container, h3{
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        min-width: 300px;
-        align-content: center;
-    }
+@keyframes typing {
+    from {width: 0;}
+    to {width: 100%; height: 100%;}
 }
+
+@keyframes blink-caret {
+    from, to { border-color: transparent;}
+    50% { border-color: white;}
+}
+
 
     
 
