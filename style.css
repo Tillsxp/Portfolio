@@ -17,9 +17,7 @@ body {
     background-color: rgba(255, 255, 255, 0.747);
 }
 
- #name {
-    
- }
+
 .sidenav ul{
     list-style-type: none;
 }
@@ -87,6 +85,25 @@ footer > div {
     margin-right: 10px;
 }
 
+.writer{
+    overflow: hidden;
+    border-right:.10em solid green;
+    white-space: nowrap;
+    letter-spacing: .15em;
+    animation: 
+    typing 5.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0}
+    to {width:80% }
+}
+
+@keyframes blink-caret {
+from, to { border-color: transparent}
+50% { border-color: green}
+}
 
 @media screen and (max-width: 680px) {
 .sidenav { width: 200px; background-color: rgba(0, 0, 0, 0.747); }
